@@ -1,0 +1,84 @@
+{
+  "title": "HelloQuest (||) начало",
+  "prolog": "Текст предыстории ...",
+  "steps": {
+    "win3": {
+      "id": "win3",
+      "text": "Победа! Вы спасли мир от инопланетного вторжения!",
+      "options": null
+    },
+    "start": {
+      "id": "start",
+      "text": "Ты потерял память. Принять вызов НЛО?",
+      "options": {
+        "1": {
+          "id": 1,
+          "text": "Принять вызов",
+          "nextStepId": "bridge"
+        },
+        "2": {
+          "id": 2,
+          "text": "Отклонить вызов",
+          "nextStepId": "lose1"
+        },
+        "3": {
+          "id": 3,
+          "text": "Сбить из рогатки",
+          "nextStepId": "win3"
+        }
+      }
+    },
+    "lose3": {
+      "id": "lose3",
+      "text": "Твоя ложь разоблачена. Поражение!",
+      "options": null
+    },
+    "lose1": {
+      "id": "lose1",
+      "text": "Поражение!",
+      "options": null
+    },
+    "bridge": {
+      "id": "bridge",
+      "text": "Ты принял вызов. Поднимаешься на мостик к капитану?",
+      "options": {
+        "1": {
+          "id": 1,
+          "text": "Подняться на мостик",
+          "nextStepId": "captain"
+        },
+        "2": {
+          "id": 2,
+          "text": "Отказаться",
+          "nextStepId": "lose2"
+        }
+      }
+    },
+    "captain": {
+      "id": "captain",
+      "text": "Ты поднялся на мостик. Ты кто?",
+      "options": {
+        "1": {
+          "id": 1,
+          "text": "Рассказать правду о себе",
+          "nextStepId": "win"
+        },
+        "2": {
+          "id": 2,
+          "text": "Солгать о себе",
+          "nextStepId": "lose3"
+        }
+      }
+    },
+    "lose2": {
+      "id": "lose2",
+      "text": "Ты не пошел на переговоры. Поражение!",
+      "options": null
+    },
+    "win": {
+      "id": "win",
+      "text": "Победа!",
+      "options": null
+    }
+  }
+}
